@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.study.pma.DAO.ProjectRepository;
 import org.study.pma.DTO.ChartData;
+import org.study.pma.DTO.TimeChartData;
 import org.study.pma.Entities.Project;
 
 
@@ -27,9 +28,12 @@ public class ProjectService {
 	public List<ChartData> getProjectStatus(){
 		return proRepo.getProjectStatus();
 	}
+
+
+
 	
-	/*
+	
 	public List<TimeChartData> getTimeData(){
 		return proRepo.getTimeData();
-	}*/
+	}
 }
